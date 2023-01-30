@@ -15,7 +15,7 @@ except:
 
 #Dah mamae nmechoka
 conf = ConfigParser()
-x = PrettyTable()
+ghostcracker = PrettyTable()
 
 color = ['\x1b[38;5;118m','\x1b[38;5;33m','\033[0;35m','\033[0;36m','\033[0;32m','\033[0;35m''\e[0;95m','\e[35m','\033[1;33m']
  
@@ -23,7 +23,7 @@ pixer = random.choice(color)
 
 
 
-x.field_names = ["city","country","country_name","postal","org","ip","loc","region","timezone","latitude","longitude"]
+ghostcracker.field_names = ["city","country","country_name","postal","org","ip","loc","region","timezone","latitude","longitude"]
 
 conf.read("vitu/config.ini")
 
@@ -53,8 +53,8 @@ def ass(num):
     try: 
         handler = ipinfo.getHandler(conf.get("TOKEN","access_token"))
         details = handler.getDetails(num)
-        x.add_row([f"{details.city}",f"{details.country}",f"{details.country_name}",f"{details.postal}",f"{details.org}",f"{details.ip}",f"{details.loc}",f"{details.region}",f"{details.timezone}",f"{details.latitude}",f"{details.longitude}"])
-        print(x)
+        ghostcracker.add_row([f"{details.city}",f"{details.country}",f"{details.country_name}",f"{details.postal}",f"{details.org}",f"{details.ip}",f"{details.loc}",f"{details.region}",f"{details.timezone}",f"{details.latitude}",f"{details.longitude}"])
+        print(ghostcracker)
         typing("Telegram: https://t.me/PixerJason")
     except:
         fucktoken()
