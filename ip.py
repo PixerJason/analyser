@@ -67,6 +67,7 @@ def ass(num):
 
 def main():
     try:
+      safisha()
       typing("\t\t\t0\t\tCoded By Pixer Jason!")
       banner()
       num = input("Enter The Fuckn IP: ")
