@@ -4,6 +4,7 @@ try:
     from configparser import ConfigParser
     import sys
     import time
+    import paltform
     from prettytable import PrettyTable
     import random
 except:
@@ -21,6 +22,11 @@ color = ['\x1b[38;5;118m','\x1b[38;5;33m','\033[0;35m','\033[0;36m','\033[0;32m'
  
 pixer = random.choice(color)    
 
+def safisha():
+    if platform == 'win32:
+        os.system('cls')
+    else:
+        os.system('clear')
 
 
 ghostcracker.field_names = ["city","country","country_name","postal","org","ip","loc","region","timezone","latitude","longitude"]
