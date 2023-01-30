@@ -4,7 +4,7 @@ try:
     from configparser import ConfigParser
     import sys
     import time
-    import paltform
+    import platform
     from prettytable import PrettyTable
     import random
 except:
