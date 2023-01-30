@@ -23,7 +23,7 @@ color = ['\x1b[38;5;118m','\x1b[38;5;33m','\033[0;35m','\033[0;36m','\033[0;32m'
 pixer = random.choice(color)    
 
 def safisha():
-    if platform == 'win32:
+    if platform == 'win32':
         os.system('cls')
     else:
         os.system('clear')
