@@ -5,6 +5,7 @@ try:
     import sys
     import time
     from prettytable import PrettyTable
+    import platform
     import random
 except:
     os.system("pip install ipinfo")
@@ -24,6 +25,12 @@ pixer = random.choice(color)
 x.field_names = ['NAME','DATA']
 
 conf.read("vitu/config.ini")
+
+def safisha():
+    if platform == 'win32':
+        os.system("cls")
+     else:
+        os.system("clear")
 
 def typing(text):
     for character in text:
@@ -69,6 +76,7 @@ def ass(num):
 
 def main():
     try:
+      safisha()
       typing("\t\t\t0\t\tCoded By Pixer Jason!")
       banner()
       num = input("Enter The Fuckn IP: ")
