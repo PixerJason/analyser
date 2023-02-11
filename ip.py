@@ -29,7 +29,7 @@ conf.read("vitu/config.ini")
 def safisha():
     if platform == 'win32':
         os.system("cls")
-     else:
+    else:
         os.system("clear")
 
 def typing(text):
